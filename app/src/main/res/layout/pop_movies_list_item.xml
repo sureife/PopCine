@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/iv_mov"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/content_desc_movie_image"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="32dp"
+        android:scaleType="center"
+        >
+
+    </ImageView>
+</FrameLayout>

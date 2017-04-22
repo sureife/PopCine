@@ -9,3 +9,4 @@
 .externalNativeBuild
 /.idea/
 /build/
+/app/src/main/java/com/sureife/popcine/utils/Config.java
