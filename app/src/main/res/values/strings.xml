@@ -6,4 +6,6 @@
     <string name="menu_sort_by_toprated">Sort by TopRated</string>
     <string name="error_message">Error, could not load movies, try again later</string>
     <string name="no_network_msg">No network available</string>
+    <string name="tv_released_label">released:</string>
+    <string name="tv_average_user_rating_label">average user rating:</string>
 </resources>

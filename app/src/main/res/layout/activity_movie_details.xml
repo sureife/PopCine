@@ -11,77 +11,83 @@
         android:id="@+id/tv_movie_title"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="#4269d4"
+        android:background="@color/colorPrimaryDark"
         android:paddingLeft="30dp"
         android:paddingStart="30dp"
         android:paddingTop="20dp"
         android:textSize="28sp"
-        android:textColor="#FFF"
+        android:textColor="@color/movie_title_text_color"
         tools:text="Chappie" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp">
-
-            <ImageView
-                android:id="@+id/iv_movie_thumbnail"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:background="#000" />
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="released: " />
+                <ImageView
+                    android:id="@+id/iv_movie_thumbnail"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:background="#000" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:id="@+id/tv_release_date"
-                    tools:text="03-08-2015" />
+                    android:layout_marginLeft="32dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="average user rating: " />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_released_label" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="24sp"
-                    android:id="@+id/tv_user_ratings"
-                    tools:text="8.6" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_24sp"
+                        android:id="@+id/tv_release_date"
+                        tools:text="03-08-2015" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/tv_average_user_rating_label" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_24sp"
+                        android:id="@+id/tv_user_ratings"
+                        tools:text="8.6" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/tv_plot_synopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                tools:text="You’ll need to modify the build.gradle file for your app. These modifications will happen in the build.gradle file for your module’s directory, not the project root directory (it is the file highlighted in blue in the screenshot below)" />
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_plot_synopsis"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            tools:text="You’ll need to modify the build.gradle file for your app. These modifications will happen in the build.gradle file for your module’s directory, not the project root directory (it is the file highlighted in blue in the screenshot below)" />
+    </ScrollView>
 
-    </LinearLayout>
 
 
 </LinearLayout>
